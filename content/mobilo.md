@@ -3,7 +3,7 @@ title: Mobilo
 description: Tsarata tsouin tsouin
 type: page
 weight: 100
-
+somethingelse: Else!
 ---
 
 
@@ -20,9 +20,9 @@ You don't know yet...and ...yeah well, that's that.
 
 Here's a quote:
 
-> S*** my a**
+> Quote me this, yo.
 
-> I don't give a rat's a**
+> I don't give, I just don't
 
 Here's another:
 
