@@ -27,7 +27,7 @@ enableRobotsTXT = true
 
 [languages]
   [languages.en]
-    title = "ZE LANGUAGE HAZ RETURN'D!"
+    title = "English Website Title Yes"
 
   [languages.fr]
-    title = "ZE LANGUE EST DE RETOURNÉE"
+    title = "Titre site web oui"
