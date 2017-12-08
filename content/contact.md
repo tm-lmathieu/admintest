@@ -2,8 +2,7 @@
 title: Contact
 description: We'd love to hear from you
 type: page
-menu:
-  secondary: {}
+menu: "main"
 weight: 199
 
 ---

@@ -2,8 +2,6 @@
 title: Mobilo
 description: Tsarata tsouin tsouin
 type: page
-menu:
-  secondary: {}
 weight: 100
 
 ---

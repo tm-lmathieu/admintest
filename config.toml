@@ -28,6 +28,18 @@ enableRobotsTXT = true
 [languages]
   [languages.en]
     title = "ZE LANGUAGE HAZ RETURN'D!"
+  [[Languages.en.menu.languages]]
+     name = "Français"
+     identifier = ""
+     weight = 5
+     url = "/fr"
 
   [languages.fr]
     title = "ZE LANGUE EST DE RETOURNÉE"
+  [[Languages.fr.menu.languages]]
+     name = "English"
+     identifier = ""
+     weight = 5
+     url = "/en"
+
+
