@@ -41,6 +41,6 @@ enableRobotsTXT = true
      name = "Français"
      identifier = ""
      weight = 5
-     url = "/fr"
+     url = "/"
 
 
