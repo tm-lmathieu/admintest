@@ -1,10 +1,11 @@
 title = "Ananke"
 baseURL = "https://gohugo-ananke-theme-demo.netlify.com/"
-languageCode = "en"
+languageCode = "fr"
 theme = "gohugo-theme-ananke"
 
+
 MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "fr"
 SectionPagesMenu = "main"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
@@ -26,14 +27,6 @@ enableRobotsTXT = true
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
 
 [languages]
-  [languages.en]
-    title = "ZE LANGUAGE HAZ RETURN'D!"
-  [[Languages.en.menu.languages]]
-     name = "Français"
-     identifier = ""
-     weight = 5
-     url = "/fr"
-
   [languages.fr]
     title = "ZE LANGUE EST DE RETOURNÉE"
   [[Languages.fr.menu.languages]]
@@ -41,5 +34,13 @@ enableRobotsTXT = true
      identifier = ""
      weight = 5
      url = "/en"
+
+  [languages.en]
+    title = "ZE LANGUAGE HAZ RETURN'D!"
+  [[Languages.en.menu.languages]]
+     name = "Français"
+     identifier = ""
+     weight = 5
+     url = "/fr"
 
 
