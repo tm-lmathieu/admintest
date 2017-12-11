@@ -34,6 +34,22 @@ enableRobotsTXT = true
      identifier = ""
      weight = 5
      url = "/en"
+  [[Languages.fr.menu.custom]]
+     name = "À propos"
+     identifier = ""
+     weight = 5
+     url = "/about"
+  [[Languages.fr.menu.custom]]
+     name = "Contact"
+     identifier = ""
+     weight = 6
+     url = "/contact"
+  [[Languages.fr.menu.custom]]
+     name = "Articles"
+     identifier = ""
+     weight = 4
+     url = "/post"
+
 
   [languages.en]
     title = "ZE LANGUAGE HAZ RETURN'D!"
@@ -42,5 +58,23 @@ enableRobotsTXT = true
      identifier = ""
      weight = 5
      url = "/"
+  [[Languages.en.menu.custom]]
+     name = "Articles"
+     identifier = ""
+     weight = 4
+     url = "/en/enpost"
+  [[Languages.en.menu.custom]]
+     name = "About"
+     identifier = ""
+     weight = 5
+     url = "/en/about"
+  [[Languages.en.menu.custom]]
+     name = "Contact"
+     identifier = ""
+     weight = 6
+     url = "/en/contact"
+
+
+
 
 
