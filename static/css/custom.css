@@ -16,6 +16,7 @@ jaune:  #F3AE1C
 
 */
 
+
 /* COLORS */
 
 .vert1 { color: #71AE47; }
@@ -38,7 +39,26 @@ jaune:  #F3AE1C
 .b--jaune { background-color: #F3AE1C; }
 
 
-/* Custom styles */
+/* TYPOGRAPHY */
+
+.lato { font-family: 'Lato', sans-serif; }
+.muli { font-family: 'Muli', sans-serif; }
+
+.lh-167 { line-height: 1.667; }
+
+ul ul { list-style: disc; }
+
+
+/* GENERAL SPACING */
+/* "psides" mimics "ph3 ph4-ns" */
+.psides { padding-left: 1rem; padding-right: 1rem; }
+@media screen and (min-width: 30em) {
+    .psides { padding-left: 2rem; padding-right: 2rem; }
+}
+
+
+
+/* HEADER & NAVIGATION */
 
 .logo {
     display: inline-block;
@@ -71,6 +91,21 @@ jaune:  #F3AE1C
     position: relative;
     top: -10px;
 }
+
+
+
+/* HOME PAGE */
+
+.woodbg {
+    background: url(../images/IMG_3604.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.overlap-up {
+    float: left;
+    margin-top: -5rem;
+}
+
 
 .linebg {
     background: rgba(152, 116, 40, .08) url(../images/linebg-tile.png);
