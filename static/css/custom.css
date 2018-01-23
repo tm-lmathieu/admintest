@@ -1,0 +1,78 @@
+/*
+--- COULEURS ---
+vert1:      #71AE47
+vert2:      #255503
+
+bleu1:  #599AD3
+bleu2:  #225C8F
+bleu3:  #072B4A
+
+gris1:  #BEBEBE
+gris2:  #7E7F7F
+
+noir:   #353D40
+
+jaune:  #F3AE1C
+
+*/
+
+/* COLORS */
+
+.vert1 { color: #71AE47; }
+.b--vert1 { background-color: #71AE47; }
+.vert2 { color: #255503; }
+.b--vert2 { background-color: #255503; }
+.bleu1 { color: #599AD3; }
+.b--bleu1 { background-color: #599AD3; }
+.bleu2 { color: #225C8F; }
+.b--bleu2 { background-color: #225C8F; }
+.bleu3 { color: #072B4A; }
+.b--bleu3 { background-color: #072B4A; }
+.gris1 { color: #BEBEBE; }
+.b--gris1 { background-color: #BEBEBE; }
+.gris2 { color: #7E7F7F; }
+.b--gris2 { background-color: #7E7F7F; }
+.noir { color: #353D40; }
+.b--noir { background-color: #353D40; }
+.jaune { color: #F3AE1C; }
+.b--jaune { background-color: #F3AE1C; }
+
+
+/* Custom styles */
+
+.logo {
+    display: inline-block;
+    margin-top: -1rem;
+    color: #fff;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 479px) {
+    .logo {
+        display: block;
+        margin: -1rem auto 0;
+    }
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-items {
+    float: right;
+}
+
+.lang-menu {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+    top: -10px;
+}
+
+.linebg {
+    background: rgba(152, 116, 40, .08) url(../images/linebg-tile.png);
+    background-size: 22px 24px;
+}
