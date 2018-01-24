@@ -25,7 +25,7 @@ aaadfsdaaaaaaaaaaaaaaaaaaaaaaaaa
 </div>
 <div class="woodbg psides">
     <div class="mw9 center cf">
-        <div class="b--vert1 pt2 pb3 ph4 w-75-m w-50-l mb6 overlap-up">
+        <div class="bg-vert1 pt2 pb3 ph4 w-75-m w-50-l mb6 overlap-up">
             <h2 class="vert2 f2 lh-title ph3">Au coeur de notre métier</h2>
             <ul class="white f5 lh-copy">
                 <li>
@@ -71,7 +71,7 @@ aaadfsdaaaaaaaaaaaaaaaaaaaaaaaaa
 
     <div class="pa3 pa4-ns w-100 w-70-ns center">
       {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
+        {{ with .Site.GetPage "section" $section_name }}
           <h1 class="flex-none">
             Recent {{ .Title }}
           </h1>
@@ -110,4 +110,5 @@ aaadfsdaaaaaaaaaaaaaaaaaaaaaaaaa
       </div>
   {{ end }}
 -->
+
 {{ end }}

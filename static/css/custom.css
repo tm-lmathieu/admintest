@@ -15,34 +15,53 @@ noir:   #353D40
 jaune:  #F3AE1C
 
 */
-
+.colorpalette {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.colorpalette div {
+    float: left;
+    width: 24px;
+    height: 24px;
+}
 
 /* COLORS */
 
 .vert1 { color: #71AE47; }
-.b--vert1 { background-color: #71AE47; }
+.bg-vert1 { background-color: #71AE47; }
+.b--vert1 { border-color: #71AE47; }
 .vert2 { color: #255503; }
-.b--vert2 { background-color: #255503; }
+.bg-vert2 { background-color: #255503; }
+.b--vert2 { border-color: #255503; }
 .bleu1 { color: #599AD3; }
-.b--bleu1 { background-color: #599AD3; }
+.bg-bleu1 { background-color: #599AD3; }
+.b--bleu1 { border-color: #599AD3; }
 .bleu2 { color: #225C8F; }
-.b--bleu2 { background-color: #225C8F; }
+.bg-bleu2 { background-color: #225C8F; }
+.b--bleu2 { border-color: #225C8F; }
 .bleu3 { color: #072B4A; }
-.b--bleu3 { background-color: #072B4A; }
+.bg-bleu3 { background-color: #072B4A; }
+.b--bleu3 { border-color: #072B4A; }
 .gris1 { color: #BEBEBE; }
-.b--gris1 { background-color: #BEBEBE; }
+.bg-gris1 { background-color: #BEBEBE; }
+.b--gris1 { border-color: #BEBEBE; }
 .gris2 { color: #7E7F7F; }
-.b--gris2 { background-color: #7E7F7F; }
+.bg-gris2 { background-color: #7E7F7F; }
+.b--gris2 { border-color: #7E7F7F; }
 .noir { color: #353D40; }
-.b--noir { background-color: #353D40; }
+.bg-noir { background-color: #353D40; }
+.b--noir { border-color: #353D40; }
 .jaune { color: #F3AE1C; }
-.b--jaune { background-color: #F3AE1C; }
+.bg-jaune { background-color: #F3AE1C; }
+.b--jaune { border-color: #F3AE1C; }
 
 
 /* TYPOGRAPHY */
 
 .lato { font-family: 'Lato', sans-serif; }
-.muli { font-family: 'Muli', sans-serif; }
+/* .muli { font-family: 'Muli', sans-serif; } */
 
 .lh-167 { line-height: 1.667; }
 
@@ -90,6 +109,46 @@ ul ul { list-style: disc; }
     vertical-align: middle;
     position: relative;
     top: -10px;
+}
+
+
+/* FOOTER */
+.prefooter a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 30em) {
+    .prefooter a {
+        height: 80px;
+    }
+}
+
+.prefooter img {
+    width: 220px;
+    max-width: 100%;
+}
+
+.card a {
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.img-container {
+    position: relative;
+    padding-top: 67%;
+    background-color: #50E3C2;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

@@ -19,8 +19,7 @@
     {{ end }}
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
-    <!-- ^ we're gonna want to use this since no Avenir or Avenir Next in webfonts ^ -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">-->
     <link href='{{ "dist/main.css" | absURL }}' rel='stylesheet' type="text/css" />
     <link href='{{ "css/custom.css" | absURL }}' rel='stylesheet' type="text/css" />
     {{ block "favicon" . }}
@@ -43,7 +42,18 @@
     {{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "muli bg-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <body class="ma0 {{ $.Param "body_classes"  | default "lato bg-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+    <!--<div class="colorpalette">
+        <div class="bg-vert1"></div>
+        <div class="bg-vert2"></div>
+        <div class="bg-bleu1"></div>
+        <div class="bg-bleu2"></div>
+        <div class="bg-bleu3"></div>
+        <div class="bg-gris1"></div>
+        <div class="bg-gris2"></div>
+        <div class="bg-noir"></div>
+        <div class="bg-jaune"></div>
+    </div>-->
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main role="main">

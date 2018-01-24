@@ -1,19 +1,69 @@
-<div class="prefooter psides">
+<div class="prefooter pv4 psides">
     <div class="mw9 center cf">
         <h2 class="f3 b ">Nos partenaires</h2>
-        <div class="fl w-20-ns">1</div>
-        <div class="fl w-20-ns">1</div>
-        <div class="fl w-20-ns">1</div>
-        <div class="fl w-20-ns">1</div>
-        <div class="fl w-20-ns">1</div>
+        <div class="fl w-100 w-third-m w-20-l pr4-ns">
+            <a class="db mb4" href="#" title="MRV Énergie">
+                <img src="/images/logo_mrvenergie.png">
+            </a>
+        </div>
+        <div class="fl w-100 w-third-m w-20-l pr4-ns">
+            <a class="db mb4" href="#" title="ElectrAF">
+                <img src="/images/logo_electraf.png">
+            </a>
+        </div>
+        <div class="fl w-100 w-third-m w-20-l pr4-ns">
+            <a class="db mb4" href="#" title="BETRER">
+                <img src="/images/logo_BETRER.png">
+            </a>
+        </div>
+        <div class="fl w-100 w-third-m w-20-l pr4-ns">
+            <a class="db mb4 bleu2" href="#">Lien texte test</a>
+        </div>
+        <div class="fl w-100 w-third-m pr4-ns">
+            
+        </div>
     </div>
     
 </div>
-<footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
-    &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-  </a>
-  {{ partial "social-follow.html" . }}
-  </div>
-</footer>
+<footer class="bg-bleu3 bottom-0 w-100 pa3" role="contentinfo">
+    <div class="mw9 center cf">
+        <h2 class="white mb4">Nouvelles</h2>
+        <div class="fl-ns w-100-m w-60-l">
+            {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+            {{/* $mainSections := .Site.Params.mainSections | default (slice "post") */}}
+            {{ $mainSections := (slice "post") }}
+            {{/* Create a variable with that section to use in multiple places. */}}
+            {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+            {{/* Check to see if the section is defined for ranging through it */}}
+            {{ $section_count := len $section }}
+
+            {{ if ge $section_count 1 }}
+
+                {{/* $n_posts := $.Param "recent_posts_number" | default 3 */}}
+                {{ $n_posts := 3 }}
+
+                {{/* Range through the first $n_posts items of the section */}}
+                {{ range (first $n_posts $section) }}
+                    {{ partial "summary-card.html" . }}
+                {{ end }}
+
+            {{ end}}
+        </div>
+        
+        
+        <div class="fl-ns w-100-m w-40-l">
+            <div class="fl-ns w-100-m w-50-l">&nbsp;</div>
+            <div class="fl-ns w-100-m w-50-l">
+                <h3 class="white mt0">Contacter DERA</h3>
+                <p class="white lh-copy mb4 mb5-l">
+                    +1 (514) 465-9034<br>
+                    <a class="bleu1" href="mailto:info@deraenergy.com">info@deraenergy.com</a>
+                </p>
+                {{ partial "social-follow.html" . }}
+                <p class="white lh-copy">
+                    Copyright &copy; 2017-{{ now.Format "2006" }} DERA.<br>
+                    Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </div>  
