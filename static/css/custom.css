@@ -69,6 +69,11 @@ ul ul { list-style: disc; }
 
 
 /* GENERAL SPACING */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* "psides" mimics "ph3 ph4-ns" */
 .psides { padding-left: 1rem; padding-right: 1rem; }
 @media screen and (min-width: 30em) {
@@ -113,6 +118,11 @@ ul ul { list-style: disc; }
 
 
 /* FOOTER */
+.prefooter {
+    border-top: 1px solid #BEBEBE;
+    box-shadow: inset 0 4px 20px 0 rgba(200,200,200,.5);
+}
+
 .prefooter a {
     display: flex;
     flex-direction: column;
@@ -161,7 +171,6 @@ ul ul { list-style: disc; }
 }
 
 .overlap-up {
-    float: left;
     margin-top: -5rem;
 }
 
@@ -169,4 +178,128 @@ ul ul { list-style: disc; }
 .linebg {
     background: rgba(152, 116, 40, .08) url(../images/linebg-tile.png);
     background-size: 22px 24px;
+}
+
+
+/* PROJECTS */
+.projects-title {
+    background: rgba(152,116,40,.08) url(../images/linebg-tile.png);
+    background-size: 22px 24px;
+}
+
+.projects-title .mw9.center:before {
+    content: '';
+    position: absolute;
+    top: -260px;
+    right: -24px;
+    width: 65%;
+    padding-top: 65%;
+    background: url(../images/carte-afrique.svg) 0% 50% no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 30em) {
+    top: -260px;
+    right: -24px;
+    width: 65%;
+    padding-top: 65%;
+}
+
+@media screen and (min-width: 60em) {
+    .projects-title .mw9.center:before {
+        width: 50%;
+        top: -260px;
+        right: -24px;
+    }
+}
+
+.cardband:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cardband .img-container {
+    margin-left: 0;
+    padding-top: 78.2%;
+    background-color: #7E7F7F;
+}
+
+@media screen and (min-width: 40em) {
+    .cardband .img-container {
+        margin-left: 2rem;
+        float: right;
+        width: 42.85%;
+        padding-top: 33.5%;
+    }
+}
+
+
+/* SERVICES */
+.services-cards > .fl:last-child {
+    margin-left: 25%;
+}
+
+@media screen and (min-width: 60em) {
+    .services-cards > .fl:last-child {
+        margin-left: 0;
+    }
+}
+
+.service-card {
+    position: relative;
+    padding-top: 130%;
+}
+
+.service-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card p {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(65,128,21,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container small {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+/* CONTACT PAGE */
+
+@media screen and (min-width: 30em) {
+    .contact-wrap,
+    .contact-wrap .fl {
+        display: flex;
+    }
+}
+
+.contact-wrap img {
+    object-fit: cover;
+}
+
+.contact-wrap h3:after {
+    content: '';
+    display: block;
+    margin: 16px auto 24px;
+    width: 56px;
+    border-bottom: 2px solid #E4E4E4;
 }

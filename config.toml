@@ -19,12 +19,13 @@ enableRobotsTXT = true
 [params]
   description = "The last theme you'll ever need. Maybe."
   faceboook = ""
-  twitter = "https://twitter.com/GoHugoIO"
+  twitter = ""
   instagram = ""
   youtube = ""
+  linkedin = "https://ca.linkedin.com/in/richardvoisin"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  background_color_class = "bg-white"
+  featured_image = "/images/IMG_3484.jpg"
 
 [languages]
   [languages.fr]
@@ -35,20 +36,20 @@ enableRobotsTXT = true
      weight = 5
      url = "/en"
   [[Languages.fr.menu.custom]]
-     name = "À propos"
+     name = "Projets"
      identifier = ""
-     weight = 5
-     url = "/about"
+     weight = 3
+     url = "/projets"
   [[Languages.fr.menu.custom]]
      name = "Contact"
      identifier = ""
      weight = 6
      url = "/contact"
   [[Languages.fr.menu.custom]]
-     name = "Articles"
+     name = "Services"
      identifier = ""
      weight = 4
-     url = "/post"
+     url = "/services"
 
 
   [languages.en]
@@ -59,15 +60,15 @@ enableRobotsTXT = true
      weight = 5
      url = "/"
   [[Languages.en.menu.custom]]
-     name = "Articles"
+     name = "Services"
      identifier = ""
      weight = 4
-     url = "/en/enpost"
+     url = "/en/services"
   [[Languages.en.menu.custom]]
-     name = "About"
+     name = "Projects"
      identifier = ""
-     weight = 5
-     url = "/en/about"
+     weight = 3
+     url = "/en/projects"
   [[Languages.en.menu.custom]]
      name = "Contact"
      identifier = ""

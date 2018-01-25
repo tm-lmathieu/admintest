@@ -1,0 +1,26 @@
+{{ $featured_image := .Params.featured_image }}
+
+
+<article class="cardband bg-near-white mb4">
+    <div class="img-container ml3">
+        {{ if .Params.featured_image }}
+            {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+            {{ $featured_image := (trim $featured_image "/") | absURL }}
+            <img src="{{ $featured_image }}" class="w-100 db" alt="{{ .Title }}">
+        {{ end }}
+
+    </div>
+    <div class="pa4">
+        <h3 class="link f2 mt0 mb2 db noir lh-title">{{ .Title }}</h3>
+        <p class="f5 fw7 ttu mt0 vert1">
+            {{ if .Params.region }}
+                {{ .Params.region }}
+            {{ end }}
+        </p>
+        <p class="lh-copy">
+            {{ .Params.description }}
+        </p>
+        <a class="f6 link dim br2 ba ph3 pv2 mb2 dib black" href="#0">Voir le projet</a>
+    </div>
+    
+</article>

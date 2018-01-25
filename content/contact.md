@@ -1,13 +1,9 @@
 ---
 title: Contact
 description: We'd love to hear from you
-type: page
+type: contact
 menu: "main"
 weight: 199
 
 ---
-
-
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out [Formspree](https://formspree.io/) for a simple, free form service.
-
-{{< form-contact action="http://formspree.io/your@email.com"  >}}
+Développement Énergie Renouvelable Afrique inc. compte sur la solidité, la réactivité et la performance de son organisation. La détermination et le talent des ressources fédèrent notre organisation dans un esprit de transparence et de responsabilité citoyenne.

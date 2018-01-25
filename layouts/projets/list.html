@@ -1,0 +1,51 @@
+{{ define "main" }}
+iiiiiiiiiiiiiiiiiiiste
+<div class="pv5 psides bg-near-white">
+    <div class="mw7 center">
+        <p class="lh-copy tc">
+            {{ .Content }}
+        </p>
+    </div>
+</div>
+
+<div class="pv4 psides bg-white mb7">
+    <div class="mw7 center">
+        <h2 class="f2 fw7 tc">Mission</h2>
+        <p class="lh-copy tc">
+            Identifier, développer et promouvoir des projets de production d’énergie 
+            renouvelable sur le continent africain avec une approche de développement 
+            durable et répondant aux besoins des communautés.
+        </p>
+    </div>
+</div>
+
+
+<div class="projects-title psides pv5">
+    <div class="mw9 center relative">
+        <h2 class="f2 fw7 mt0">Projets</h2>
+        <p class="lh-copy mb4 w-40-m w-40-l">
+            Voici quelques-uns des projets hydroélectriques et solaires en cours 
+            de développement par l'équipe de DÉRA et ses partenaires locaux et 
+            internationaux.
+        </p>
+    </div>
+</div>
+
+<div class="psides relative cf">
+    <div class="mw9 center">
+      {{ $section := where .Data.Pages "Section" .Section }}
+      <section class="flex-ns flex-wrap overlap-up">
+        {{ range  $section }}
+          <div class="fl w-100 w-100-m w-70-l mb2 bg-white">
+            {{ partial "summary-project.html" . }}
+          </div>
+        {{ end }}
+      </section>
+    {{ template "_internal/pagination.html" . }}
+    </div>
+</div>
+
+<div class="psides tc mt4 mb5">
+    <a href="#" class="f4 link ph4 pv3 mv2 dib bg-vert1 white mr3">Contactez-nous</a>
+</div>
+{{ end }}

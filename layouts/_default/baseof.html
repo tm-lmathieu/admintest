@@ -42,8 +42,9 @@
     {{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "lato bg-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-    <!--<div class="colorpalette">
+  <body class="ma0 {{ $.Param "body_classes"  | default "lato bg-white noir"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+      <div data-url="{{ $.URL }}"></div>
+    <div class="colorpalette">
         <div class="bg-vert1"></div>
         <div class="bg-vert2"></div>
         <div class="bg-bleu1"></div>
@@ -53,7 +54,7 @@
         <div class="bg-gris2"></div>
         <div class="bg-noir"></div>
         <div class="bg-jaune"></div>
-    </div>-->
+    </div>
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main role="main">
