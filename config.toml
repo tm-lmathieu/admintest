@@ -76,6 +76,33 @@ enableRobotsTXT = true
      url = "/en/contact"
 
 
+[menu.francais]
+    [[menu.francais.custom]]
+        name = "Patate"
+        identifier = ""
+        weight = 1
+        url = "/patate"
 
+[menu.english]
+    [[menu.english.custom]]
+        name = "DERA"
+        identifier = ""
+        weight = 2
+        url = "/english"
+    [[menu.english.custom]]
+        name = "Projects"
+        identifier = ""
+        weight = 3
+        url = "/projects"
+    [[menu.english.custom]]
+        name = "Our Services"
+        identifier = ""
+        weight = 4
+        url = "/our-services"
+    [[menu.english.custom]]
+        name = "Contact Us"
+        identifier = ""
+        weight = 6
+        url = "/contact-us"
 
 

@@ -1,0 +1,31 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+<div class="single-view-title psides">
+    <div class="mw7 center">
+        <h1 class="f2 f1-l fw3 bg-white mb0 lh-title tl noir">{{ .Title | default .Site.Title }}</h1>
+    </div>
+</div>
+
+<div class="pv4 psides">
+    <div class="mw7 center">
+        {{ with .Params.description  }}
+          <p class="fw7 sagds f4 fw7 f3-l noir measure-wide-l center lh-copy mt3 mb4 tl">
+            {{ . }}
+          </p>
+        {{ end }}
+        
+        <article class="single-view-content lh-copy tl">
+            {{ .Content }}
+        </article>
+    </div>
+</div>
+
+<div class="psides tc mt4 mb5">
+    <a href="#" class="f4 link ph4 pv3 mv2 dib bg-vert1 white mr3">Contactez-nous</a>
+</div>
+{{ end }}
