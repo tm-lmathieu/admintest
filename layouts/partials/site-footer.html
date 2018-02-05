@@ -46,23 +46,12 @@
         <div class="fl-ns w-100-m w-60-l">
             {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
             {{/* $mainSections := .Site.Params.mainSections | default (slice "post") */}}
-            {{ $mainSections := (slice "post") }}
-            {{/* Create a variable with that section to use in multiple places. */}}
-            {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
-            {{/* Check to see if the section is defined for ranging through it */}}
-            {{ $section_count := len $section }}
+            {{ if eq (.Params.lang) "en" }}
+                {{ partial "site-footer-news.html" . }}
+            {{ else }}
+                {{ partial "site-footer-nouvelles.html" . }}
+            {{ end }}
 
-            {{ if ge $section_count 1 }}
-
-                {{/* $n_posts := $.Param "recent_posts_number" | default 3 */}}
-                {{ $n_posts := 3 }}
-
-                {{/* Range through the first $n_posts items of the section */}}
-                {{ range (first $n_posts $section) }}
-                    {{ partial "summary-card.html" . }}
-                {{ end }}
-
-            {{ end}}
         </div>
         
         

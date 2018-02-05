@@ -1,5 +1,5 @@
 ---
-title: NOUVELLES Test image
+title: NEWS Test image
 date: 2017-12-12T17:53:37.234Z
 description: Test
 ---

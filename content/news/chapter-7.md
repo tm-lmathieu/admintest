@@ -3,7 +3,7 @@ date: 2017-12-04T12:00:00-04:00
 description: "Esmeralda is back with a vegeance"
 featured_image: "/images/esmeralda.jpg"
 tags: []
-title: "NOUVELLES Chapter VII: Esmeralda ZE RETURN"
+title: "NEWS Chapter VII: Esmeralda ZE RETURN"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis ut velit a viverra. Donec pellentesque viverra risus. Nulla consequat ipsum justo, et malesuada nisl imperdiet lobortis. Maecenas sit amet ex ultricies, lacinia tellus nec, hendrerit enim. Pellentesque tristique massa vel nulla molestie dapibus. Praesent malesuada bibendum risus, sed vulputate quam sagittis eu. Vivamus efficitur arcu quam, eu pharetra quam mollis sed. Phasellus ex ante, laoreet id justo sit amet, bibendum efficitur nibh. Nam sollicitudin ultrices urna, in sagittis mi condimentum eget. Aenean nec suscipit augue. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam non dui eu diam imperdiet maximus. Phasellus pellentesque tempor elementum. Praesent nec mi hendrerit, interdum dolor nec, fringilla lacus.
 
