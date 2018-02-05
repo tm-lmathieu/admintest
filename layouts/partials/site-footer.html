@@ -1,6 +1,12 @@
 <div class="prefooter pv4 psides">
     <div class="mw9 center cf">
+    {{ if eq (.Params.lang) "en" }}
+        <h2 class="f3 b ">Our partners</h2>
+    {{ else }}
         <h2 class="f3 b ">Nos partenaires</h2>
+    {{ end }}
+        
+        
         <div class="fl w-100 w-third-m w-20-l pr4-ns">
             <a class="db mb4" href="#" title="MRV Énergie">
                 <img src="/images/logo_mrvenergie.png">
@@ -30,7 +36,13 @@
 </div>
 <footer class="bg-bleu3 bottom-0 w-100 pv3 psides" role="contentinfo">
     <div class="mw9 center cf">
-        <h2 class="white mb4">Nouvelles</h2>
+        <h2 class="white mb4">
+        {{ if eq (.Params.lang) "en" }}
+            News
+        {{ else }}
+            Nouvelles
+        {{ end }}
+        </h2>
         <div class="fl-ns w-100-m w-60-l">
             {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
             {{/* $mainSections := .Site.Params.mainSections | default (slice "post") */}}
@@ -57,7 +69,15 @@
         <div class="fl-ns w-100-m w-40-l">
             <div class="fl-ns w-100-m w-50-l">&nbsp;</div>
             <div class="fl-ns w-100-m w-50-l">
-                <h3 class="white mt0">Contacter DERA</h3>
+
+                {{ if eq (.Params.lang) "en" }}
+                    <h3 class="white mt0">Contact DERA</h3>
+                {{ else }}
+                    <h3 class="white mt0">Contacter DERA</h3>
+                {{ end }}
+
+
+                
                 <p class="white lh-copy mb4 mb5-l">
                     +1 (514) 465-9034<br>
                     <a class="bleu1" href="mailto:info@deraenergy.com">info@deraenergy.com</a>
@@ -65,7 +85,11 @@
                 {{ partial "social-follow.html" . }}
                 <p class="white lh-copy">
                     Copyright &copy; 2017-{{ now.Format "2006" }} DERA.<br>
-                    Tous droits réservés.
+                    {{ if eq (.Params.lang) "en" }}
+                        All rights reserved.
+                    {{ else }}
+                        Tous droits réservés.
+                    {{ end }}
                 </p>
             </div>
         </div>

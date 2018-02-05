@@ -20,7 +20,14 @@
         <p class="lh-copy">
             {{ .Params.description }}
         </p>
-        <a class="f6 link dim br2 ba ph3 pv2 mb2 dib black" href="{{ .URL }}">Voir le projet</a>
+        <a class="f6 link dim br2 ba ph3 pv2 mb2 dib black" href="{{ .URL }}">
+            {{ if eq (.Params.lang) "en" }}
+                View project
+            {{ else }}
+                Voir le projet
+            {{ end }}
+        </a>
     </div>
+    
     
 </article>

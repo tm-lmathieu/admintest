@@ -5,5 +5,6 @@ tags: []
 featured_image: ""
 region: "Guinée, Libéria, Sierra Léone"
 description: "Énergie renouvable produite par aménagement hydroélectrique (barrage et centrale)"
+lang: "fr"
 ---
 TEST 2ND TENE II C'EST UN AUTRE TEST

@@ -5,7 +5,7 @@ tags: []
 featured_image: "http://placehold.it/1920x1080"
 region: "République de Guinée"
 description: "Énergie renouvable produite par aménagement hydroélectrique (barrage et centrale)"
-language: en
+lang: "fr"
 ---
 
 **Lieu** : RÉPUBLIQUE DE GUINÉE<br>
