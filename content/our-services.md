@@ -1,5 +1,6 @@
 ---
 title: Our Services
+featured_image: '/images/photo-main.jpg'
 description: 
 type: our-services
 lang: en

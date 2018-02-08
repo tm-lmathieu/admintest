@@ -1,5 +1,6 @@
 ---
 title: Services
+featured_image: '/images/photo-main.jpg'
 description: 
 type: services
 lang: fr

@@ -1,0 +1,18 @@
+            {{ $mainSections := (slice "nouvelles") }}
+
+            {{/* Create a variable with that section to use in multiple places. */}}
+            {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+            {{/* Check to see if the section is defined for ranging through it */}}
+            {{ $section_count := len $section }}
+
+            {{ if ge $section_count 1 }}
+
+                {{/* $n_posts := $.Param "recent_posts_number" | default 3 */}}
+                {{ $n_posts := 3 }}
+
+                {{/* Range through the first $n_posts items of the section */}}
+                {{ range (first $n_posts $section) }}
+                    {{ partial "summary-card.html" . }}
+                {{ end }}
+
+            {{ end}}
